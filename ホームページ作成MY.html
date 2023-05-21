@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+<body class="drawer drawer--right drawer-close">
+
+	<title>ヘッダー</title>
+
+	<a name="top" id="top"></a>
+	<div id="wrapper">
+	<!--header-->
+	<header class="">
+		<h1>株式会社アムール</h1>
+		<nav>
+			<ul>
+			    <li class="first"><a href="https://www.soak-inc.jp/about/">About</a></li>
+				<li><a href="https://www.soak-inc.jp/works/">Works</a></li>
+				<li><a href="https://www.soak-inc.jp/column/">Column</a></li>
+				<li><a href="https://www.soak-inc.jp/recruit/">Recruit</a></li>
+				<li><a href="https://www.soak-inc.jp/contact/">Contact</a></li>
+				<li class="insta last"><a href="https://instagram.com/soak_503" target="_blank">Instagram</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<style>
+	
+		body {
+		  margin: 0;
+		  padding: 0;
+		  font-family: Arial, sans-serif;
+		  font-size: 16px;
+		}
+		
+		header {
+		  position: fixed;
+		  top: 0;
+		  left: 0;
+		  right: 0;
+		  background-color: #fff;
+		  padding: 20px;
+		  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+		  z-index: 100;
+		}
+		
+		nav ul {
+		  list-style: none;
+		  margin: 0;
+		  padding: 0;
+		}
+		
+		nav ul li {
+		  display: inline-block;
+		  margin-right: 20px;
+		}
+		
+		nav ul li a {
+		  text-decoration: none;
+		  color: #333;
+		  transition: all 0.3s ease;
+		}
+		
+		nav ul li a:hover {
+		  color: #0077cc;
+		}
+		
+		form {
+		  display: inline-block;
+		  margin-left: auto;
+		}
+		
+		input[type="text"],
+		input[type="email"],
+		input[type="submit"] {
+		  padding: 10px;
+		  border: none;
+		  border-radius: 3px;
+		  margin-right: 10px;
+		  font-size: 16px;
+		}
+		
+		input[type="submit"] {
+		  background-color: #0077cc;
+		  color: #fff;
+		  cursor: pointer;
+		}
+		
+		input[type="submit"]:hover {
+		  background-color: #005fa3;
+		}
+	</style>
+	<center>
+		<meta charset="UTF-8">
+		<title>スライドショー</title>
+		<style>
+			.slideshow {
+				max-width: 2000px;
+				position: relative;
+				margin: top;
+			}
+			.slide {
+				display: none;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: auto;
+				opacity: 0;
+				transition: opacity 1s ease-in-out;
+			}
+			.slide.active {
+				display: block;
+				opacity: 1;
+			}
+			.slide img {
+				width: 100%;
+				height: auto;
+			}
+			.prev,
+			.next {
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				font-size: 2em;
+				cursor: pointer;
+				z-index: 999;
+				padding: 20px;
+				color: white;
+				background-color: rgba(0, 0, 0, 0.5);
+			}
+			.prev:hover,
+			.next:hover {
+				background-color: rgba(0, 0, 0, 0.8);
+			}
+			.prev {
+				left: 0;
+			}
+			.next {
+				right: 0;
+			}
+		</style>
+	</center>
+</body>
+<body>
+    <center>
+		<br>
+		<br>
+		<br>
+		<div class="slideshow">
+			<div class="slide active">
+				<img src="001.jpg" alt="スライド1">
+			</div>
+			<div class="slide">
+				<img src="002.jpg" alt="スライド2">
+			</div>
+			<div class="slide">
+				<img src="003.jpg" alt="スライド3">
+			</div>
+			
+		</div>
+		<script>
+			var slideIndex = 0;
+			showSlides();
+	
+			function showSlides() {
+				var i;
+				var slides = document.getElementsByClassName("slide");
+				for (i = 0; i < slides.length; i++) {
+					slides[i].classList.remove("active");
+				}
+				slideIndex++;
+				if (slideIndex > slides.length) {
+					slideIndex = 1
+				}
+				slides[slideIndex - 1].classList.add("active");
+				setTimeout(showSlides, 3000); // Change image every 3 seconds
+			}
+	
+			var prev = document.querySelector(".prev");
+			var next = document.querySelector(".next");
+			prev.addEventListener("click", function() {
+				slideIndex--;
+				showSlides();
+			});
+			next.addEventListener("click", function() {
+				slideIndex++;
+				showSlides();
+			});
+		</script>
+	</center>
+	
+</body>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<body>
+	<main>
+      <center>
+		<section id="concept" class="light-bg">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<div class="section-title">
+							<h1>コンセプト</h1>
+							<br>
+							<br>
+							<p>
+								当社は、デジタルコンテンツ制作に特化したクリエイティブカンパニーです。<br>私たちは、データ入力や動画編集、イラスト・ロゴ作成といった業務を通じて、<br>クライアント様のビジネスに貢献することを目指しています。<br>
+								<br>
+								<br>
+								デジタルコンテンツの制作においては、クリエイティブ性と品質が不可欠です。<br>私たちは、デザインやストーリーテリングの技術を持ち合わせており、<br>クライアント様の想いを形にするクオリティの高い作品を創り上げます。
+							</p>
+							<br>
+							<br>
+						</div>
+						<div class="section-img">
+							<img src="001.jpg" width="800" height="600">
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /.container -->
+		</section>
+		<br>
+		<br>
+		<br>
+
+		<section id="gallery">
+			<h1>料金プラン</h1>
+			<br>
+			<br>
+			<div class="image-container">
+				<img src="001.jpg" alt="画像1" width="400" height="300" class="active">
+				<img src="002.jpg" alt="画像2" width="400" height="300">
+				<img src="003.jpg" alt="画像3" width="400" height="300">
+			</div>
+		</section>
+        <br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+
+		<section id="concept" class="light-bg">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<div class="section-title">
+							<h1>よくあるご質問</h1>
+							<br>
+							<br>
+							<p>
+								
+							</p>
+							<br>
+							<br>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /.container -->
+		</section>
+		<br>
+		<br>
+		<br>
+
+		<section id="contact" class="dark-bg">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<div class="section-title">
+							<h1>お問い合わせフォーム</h1>
+							<br>
+							<p>データ入力、動画編集、イラスト・ロゴ作成に関する事なら株式会社アムールへご相談ください。<br>多数実績とノウハウで多彩なニーズにお応えします。どんなことでもお気軽にお問合せ下さい。</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<br>
+	<br>
+	<br>
+
+	<title>お問い合わせフォーム</title>
+    <style>
+      /* ボックス型のスタイル */
+      .contact-form {
+        background-color: #f2f2f2;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 20px;
+        max-width: 500px;
+        margin: 0 auto;
+      }
+
+      .contact-form h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      .contact-form label {
+        display: block;
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+
+      .contact-form input[type="text"],
+      .contact-form input[type="email"],
+      .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        margin-bottom: 20px;
+      }
+
+      .contact-form textarea {
+        height: 150px;
+        resize: none;
+      }
+
+      .contact-form input[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      .contact-form input[type="submit"]:hover {
+        background-color: #0069d9;
+      }
+    </style>
+
+	<div class="contact-form">
+	  <center>
+		<form action="" method="post">
+		  <label for="name">お名前</label>
+		  <input type="text" id="name" name="name" required>
+		  <label for="email">メールアドレス</label>
+		  <input type="email" id="email" name="email" required>
+		  <label for="message">お問い合わせ内容</label>
+		  <textarea id="message" name="message" required></textarea>
+		  <input type="submit" value="送信する">
+		</form>
+	  </center>
+	</div>
+    <br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+
+	<title>Responsive Table</title>
+	<style type="text/css">
+		.kaisha {
+        width: 50%;
+        }
+
+        .kaisha th,
+        .kaisha td {
+        border: 1px solid #ccc;
+        padding: 20px;
+        }
+
+        .kaisha th {
+        font-weight: bold;
+        background-color: #dedede; 
+        }
+
+        @media screen and (max-width: 767px) {
+        .kaisha,
+        .kaisha tr,
+        .kaisha td,
+        .kaisha th {display:block;}
+        .kaisha th {width:auto;}
+        }
+	</style>
+	
+  <center>
+    <div class="section-title">
+	    <h1>会社概要</h1>
+    </div>
+	<br>
+	<br>
+
+    <table class="kaisha">
+		<tr>
+			<th>会社名</th>
+			<td>株式会社アムール</td>
+		</tr>
+        <tr>
+			<th>代表取締役</th>
+			<td>神崎　雅斗</td>
+		</tr>
+		<tr>
+			<th>所在地</th>
+			<td>〒692-0011 島根県安来市安来町大市場１１４５−１</td>
+		</tr>
+        <tr>
+			<th>連絡先</th>
+			<td>0854-23-1551</td>
+		</tr>
+        <tr>
+			<th>メールアドレス</th>
+			<td>20211023amour@gmail.com</td>
+		</tr>
+		<tr>
+			<th>設立</th>
+			<td>2021年10月23日</td>
+		</tr>
+		<tr>
+			<th>資本金</th>
+			<td>1,000,000円</td>
+		</tr>
+        <tr>
+			<th>事業内容</th>
+			<td>データ入力<br class="sp">動画編集<br class="sp">イラスト・ロゴ作成</td>
+		</tr>
+	</table>
+	<footer>
+		<p>&copy; 株式会社アムール</p>
+	</footer>
+  </center>
+</body>
+</html>
+
+
+
+
