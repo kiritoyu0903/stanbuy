@@ -254,6 +254,10 @@
 	
 			/* スマートフォン用のスタイル */
 			@media (max-width: 600px) {
+				.gallery p {
+					margin-bottom: 5px; /* スマートフォン用の間隔 */
+				}
+
 				.container1 img {
 					margin-bottom: 5px; /* スマートフォン用の間隔 */
 				}
@@ -453,69 +457,80 @@
 
 	<title>お問い合わせフォーム</title>
     <style>
-      /* ボックス型のスタイル */
-      .contact-form {
-        background-color: #f2f2f2;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        padding: 20px;
-        max-width: 500px;
-        margin: 0 auto;
-      }
+        /* ボックス型のスタイル */
+        .contact-form {
+            background-color: #f2f2f2;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
 
-      .contact-form h2 {
-        font-size: 24px;
-        margin-bottom: 20px;
-        text-align: center;
-      }
+        .contact-form h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
 
-      .contact-form label {
-        display: block;
-        font-size: 16px;
-        margin-bottom: 10px;
-      }
+        .contact-form label {
+            display: block;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
 
-      .contact-form input[type="text"],
-      .contact-form input[type="email"],
-      .contact-form textarea {
-        width: 100%;
-        padding: 10px;
-        font-size: 16px;
-        border-radius: 5px;
-        border: 1px solid #ccc;
-        margin-bottom: 20px;
-      }
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+        }
 
-      .contact-form textarea {
-        height: 150px;
-        resize: none;
-      }
+        .contact-form textarea {
+            height: 150px;
+            resize: none;
+        }
 
-      .contact-form input[type="submit"] {
-        background-color: #007bff;
-        color: #fff;
-        border: none;
-        border-radius: 5px;
-        padding: 10px 20px;
-        font-size: 16px;
-        cursor: pointer;
-      }
+        .contact-form input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
 
-      .contact-form input[type="submit"]:hover {
-        background-color: #0069d9;
-      }
+        .contact-form input[type="submit"]:hover {
+            background-color: #0069d9;
+        }
+
+	    /* スマートフォン用のスタイル */
+		@media (max-width: 600px) {
+			.gallery p {
+				margin-bottom: 5px; /* スマートフォン用の間隔 */
+			}
+
+			.container1 img {
+				margin-bottom: 5px; /* スマートフォン用の間隔 */
+			}
+		}
     </style>
 
 	<div class="contact-form">
 	  <center>
 		<form action="" method="post">
-		  <label for="name" id="jump-target3">お名前</label>
-		  <input type="text" id="name" name="name" required>
-		  <label for="email">メールアドレス</label>
-		  <input type="email" id="email" name="email" required>
-		  <label for="message">お問い合わせ内容</label>
-		  <textarea id="message" name="message" required></textarea>
-		  <input type="submit" value="送信する">
+		    <label for="name" id="jump-target3">お名前</label>
+		    <input type="text" id="name" name="name" required>
+		    <label for="email">メールアドレス</label>
+		    <input type="email" id="email" name="email" required>
+		    <label for="message">お問い合わせ内容</label>
+		    <textarea id="message" name="message" required></textarea>
+		    <input type="submit" value="送信する">
 		</form>
 	  </center>
 	</div>
