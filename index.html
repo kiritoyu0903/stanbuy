@@ -8,7 +8,9 @@
 <div id="wrapper">
 <!--header-->
 <header class="">
+	<center>
     <h1>株式会社アムール</h1>
+    </center>
     <nav>
         <ul>
             <li class="first"><a href="#jump-target0">コンセプト</a></li>
@@ -39,7 +41,7 @@
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         z-index: 100;
     }
-    
+
     nav ul {
         list-style: none;
         margin: 0;
@@ -86,53 +88,17 @@
         background-color: #005fa3;
     }
     
-    .spacer {
-        height: 1500px; /* デフォルトの高さ */
-    }
-
     /* スマホ用のスタイル */
     @media (max-width: 767px) {
-        .spacer {
-            height: 0px; /* スマホ用の高さに変更 */
-        }
-
-        header {
+        .header {
             padding: 10px;
         }
-
-        nav ul li {
+  
+        .nav ul li {
             display: block;
             margin: 10px 0;
         }
-
-        .accordion {
-            width: 100%;
-            font-size: 14px;
-        }
-
-        .panel {
-            width: 100%;
-            font-size: 14px;
-        }
-
-        .contact-form {
-            padding: 10px;
-            font-size: 14px;
-        }
-
-        .contact-form input, .contact-form textarea, .contact-form input[type="submit"] {
-            font-size: 14px;
-            padding: 10px;
-        }
-
-        .kaisha {
-            width: 100%;
-        }
-
-        .kaisha th, .kaisha td {
-            padding: 10px;
-        }
-    }
+    } /* この行の後の全角スペースを削除 */
 </style>
 
 <script>
@@ -202,52 +168,15 @@
         .next {
             right: 0;
         }
-    
-        .spacer {
+        
+		.spacer {
             height: 1500px; /* デフォルトの高さ */
         }
 
         /* スマホ用のスタイル */
         @media (max-width: 767px) {
             .spacer {
-                height: 150px; /* スマホ用の高さに変更 */
-            }
-
-            header {
-                padding: 10px;
-            }
-
-            nav ul li {
-                display: block;
-                margin: 10px 0;
-            }
-
-            .accordion {
-                width: 100%;
-                font-size: 14px;
-            }
-
-            .panel {
-                width: 100%;
-                font-size: 14px;
-            }
-
-            .contact-form {
-                padding: 10px;
-                font-size: 14px;
-            }
-
-            .contact-form input, .contact-form textarea, .contact-form input[type="submit"] {
-                font-size: 14px;
-                padding: 10px;
-            }
-
-            .kaisha {
-                width: 100%;
-            }
-
-            .kaisha th, .kaisha td {
-                padding: 10px;
+                height: 0px; /* スマホデフォルトの高さ */
             }
         }
     </style>
@@ -385,12 +314,12 @@
             <title>FAQ Form</title>
             <style>
                 /* フォントと色のスタイル */
-                body {
+                .body {
                     font-family: Arial, sans-serif;
                     background-color: #d9e8ee;
                 }
 
-                h1 {
+                .h1 {
                     text-align: center;
                     color: #000000;
                 }
@@ -442,6 +371,23 @@
                     margin: 0;
                     font-size: 16px;
                     line-height: 2.0;
+                }
+
+				/* スマートフォン用のスタイル */
+                @media (max-width: 767px) {
+                    .container3 p {
+                        margin-bottom: 5px; /* スマートフォン用の間隔 */
+                    }
+                    
+					.accordion {
+                        width: 100%;
+                        font-size: 14px;
+                    }
+
+                    .panel {
+                        width: 100%;
+                        font-size: 14px;
+                    }
                 }
             </style>
             <script>
@@ -589,13 +535,12 @@
 
         /* スマートフォン用のスタイル */
         @media (max-width: 767px) {
-            .contact-form {
+			.contact-form {
                 padding: 10px;
+                font-size: 14px;
             }
 
-            .contact-form input,
-            .contact-form textarea,
-            .contact-form input[type="submit"] {
+            .contact-form input, .contact-form textarea, .contact-form input[type="submit"] {
                 font-size: 14px;
                 padding: 10px;
             }
@@ -622,29 +567,21 @@
 
     <title>Responsive Table</title>
     <style type="text/css">
-        th {
-            text-align: center;
-            color: #f5f1f1;
-        }
-
-        tr {
-            text-align: left;
-            color: #000000;
-        }
-
         .kaisha {
             width: 50%;
         }
 
-        .kaisha th,
         .kaisha td {
+			text-align: left;
             border: 1px solid #ccc;
             padding: 20px;
         }
 
         .kaisha th {
+			text-align: center;
             font-weight: bold;
             background-color: #271bcc; 
+			color: #fffefe;
         }
 
         .kaisha tr {
@@ -653,11 +590,13 @@
         }
 
         @media screen and (max-width: 767px) {
-            .kaisha,
-            .kaisha tr,
-            .kaisha td,
-            .kaisha th {display:block;}
-            .kaisha th {width:auto;}
+			.kaisha {
+                width: 100%;
+            }
+
+            .kaisha th, .kaisha td {
+                padding: 10px;
+            }
         }
     </style>
 
