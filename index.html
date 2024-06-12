@@ -221,11 +221,8 @@
 
 <body>
     <center>
-        <section id="gallery">
-            <div>
-                <h2>コンセプト</h2>
-            </div>
-
+        <div class="title">
+            <h2>コンセプト</h2>
             <br>
             <br>
             <p>
@@ -234,14 +231,30 @@
                 <br>
                 デジタルコンテンツの制作においては、クリエイティブ性と品質が不可欠です。<br>私たちは、デザインやストーリーテリングの技術を持ち合わせており、<br>クライアント様の想いを形にするクオリティの高い作品を創り上げます。
             </p>
-            <br id="jump-target0">
-            <br>
+        </div>
+        <br id="jump-target0">
+        <br>
+        <section id="gallery">
             <div class="container1">
                 <img src="004.jpg" alt="画像1" width="800" height="500" class="active">
             </div>
         </section>
 
         <style>
+            .title {
+                text-align: center; /* テキストを中央揃えにする */
+            }
+
+            .title h2 {
+                font-size: 24px; /* タイトルの文字サイズ */
+            }
+
+            .title p {
+                font-size: 16px; /* 説明文の文字サイズ */
+                line-height: 1.5; /* 行の高さ（オプション） */
+                margin-top: 10px; /* 上部の余白（オプション） */
+            }
+
             .container1 {
                 display: flex;
                 flex-direction: column;
@@ -252,11 +265,12 @@
                 margin-bottom: 300px; /* デスクトップ用の間隔 */
             }
         </style>
-
-        <section id="gallery">
+        <div class="title01">
             <h2>料金プラン</h2>
-            <br>
-            <br>
+        </div>
+        <br>
+        <br>
+        <section id="gallery">
             <div class="image-container">
                 <img src="イラストロゴ料金プラン.jpg" alt="画像1" width="700" height="200" class="active">
             </div>
@@ -268,6 +282,14 @@
         </section>
 
         <style>
+            .title01 {
+                text-align: center; /* テキストを中央揃えにする */
+            }
+
+            .title01 h2 {
+                font-size: 24px; /* タイトルの文字サイズ */
+            }
+
             .container2 {
                 display: flex;
                 flex-direction: column;
@@ -281,9 +303,59 @@
         <div class="container3">
 			<p></p>
 		</div>
-        <head>
-            <title>FAQ Form</title>
+
+            <div class="title02">
+                <h2>よくあるご質問</h2>
+            </div>
+            <br>
+			<br>
+			<br>
+            <button class="accordion" onclick="toggleAccordion(0)">アニメーション動画と実写動画、どちらも対応可能ですか？</button>
+            <div class="panel">
+                <p>はい、対応できます。
+                    アニメーション･実写に限らず、ドローン・CG・VR・モーショングラフィックなど<br>各プロフェッショナルが在籍していますので、幅広く多彩な映像表現をご提案できます。</p>
+            </div>
+
+            <button class="accordion" onclick="toggleAccordion(1)" id="jump-target2">動画制作のお見積りだけでもお願いできますか？</button>
+            <div class="panel">
+                <p>もちろん可能です。まずはお気軽にお問い合わせください。
+                    詳細をヒアリングの上、お見積書を作成いたします。<br>参考映像や料金をその場でディスカッションしながらご紹介できますので、<br> Webミーティングorご訪問によるヒアリングもご検討ください。</p>
+            </div>
+
+            <button class="accordion" onclick="toggleAccordion(2)">映像制作にはどれくらいの金額がかかりますか？</button>
+            <div class="panel">
+                <p>内容・制作物によって金額が変動します。参考価格は下記をご覧ください。
+                    料金プラン</p>
+            </div>
+
+            <button class="accordion" onclick="toggleAccordion(3)">映像制作がはじめてなのですが、どういったところに注意すればいいですか？</button>
+            <div class="panel">
+                <p>「何の映像をつくるのか」「どのような目的で作るのか」を映像の制作前に決めておくことが大切です。<br>
+                    ヒアリング時に、御社にとって最も効果的な動画をご提案いたしますので、ご安心ください。<br> 全く分からないときは丸投げしていただいても構いません！<br>
+                    ご予算に応じてさまざまな切り口から動画の企画案をご提案いたします。</p>
+            </div>
+
+            <button class="accordion" onclick="toggleAccordion(4)">複数社によるコンペでもご提案いただけますか？</button>
+            <div class="panel">
+                <p>複数社によるコンペでも提案いたします。その際は、事前に詳細をご教示ください。<br>
+                    弊社は動画制作会社の中でも、コンペ勝利率が圧倒的に高いです。<br>稟議用の資料作成も行いますので、お気軽にお問い合わせください。</p>
+            </div>
+
+            <button class="accordion" onclick="toggleAccordion(5)">映像の編集だけを依頼することはできますか？</button>
+            <div class="panel">
+                <p>TV放送用からWeb用、またタブレット用とさまざまなメディアやデバイスに適した映像編集に対応しております。<br>
+                    撮影素材がなく完成したDVDしかお持ちでない場合でも対応可能です。</p>
+            </div>
+
+        <title>FAQ Form</title>
             <style>
+                .title02 {
+                    text-align: center; /* テキストを中央揃えにする */
+                }
+
+                .title02 h2 {
+                    font-size: 24px; /* タイトルの文字サイズ */
+                }
                 /* フォントと色のスタイル */
                 .body {
                     font-family: Arial, sans-serif;
@@ -357,67 +429,33 @@
                     accordion.classList.toggle("active");
                 }
             </script>
-        </head>
-        <body>
-			<h2>よくあるご質問</h2>
-            <br>
-			<br>
-			<br>
-            <button class="accordion" onclick="toggleAccordion(0)">アニメーション動画と実写動画、どちらも対応可能ですか？</button>
-            <div class="panel">
-                <p>はい、対応できます。
-                    アニメーション･実写に限らず、ドローン・CG・VR・モーショングラフィックなど<br>各プロフェッショナルが在籍していますので、幅広く多彩な映像表現をご提案できます。</p>
-            </div>
-
-            <button class="accordion" onclick="toggleAccordion(1)" id="jump-target2">動画制作のお見積りだけでもお願いできますか？</button>
-            <div class="panel">
-                <p>もちろん可能です。まずはお気軽にお問い合わせください。
-                    詳細をヒアリングの上、お見積書を作成いたします。<br>参考映像や料金をその場でディスカッションしながらご紹介できますので、<br> Webミーティングorご訪問によるヒアリングもご検討ください。</p>
-            </div>
-
-            <button class="accordion" onclick="toggleAccordion(2)">映像制作にはどれくらいの金額がかかりますか？</button>
-            <div class="panel">
-                <p>内容・制作物によって金額が変動します。参考価格は下記をご覧ください。
-                    料金プラン</p>
-            </div>
-
-            <button class="accordion" onclick="toggleAccordion(3)">映像制作がはじめてなのですが、どういったところに注意すればいいですか？</button>
-            <div class="panel">
-                <p>「何の映像をつくるのか」「どのような目的で作るのか」を映像の制作前に決めておくことが大切です。<br>
-                    ヒアリング時に、御社にとって最も効果的な動画をご提案いたしますので、ご安心ください。<br> 全く分からないときは丸投げしていただいても構いません！<br>
-                    ご予算に応じてさまざまな切り口から動画の企画案をご提案いたします。</p>
-            </div>
-
-            <button class="accordion" onclick="toggleAccordion(4)">複数社によるコンペでもご提案いただけますか？</button>
-            <div class="panel">
-                <p>複数社によるコンペでも提案いたします。その際は、事前に詳細をご教示ください。<br>
-                    弊社は動画制作会社の中でも、コンペ勝利率が圧倒的に高いです。<br>稟議用の資料作成も行いますので、お気軽にお問い合わせください。</p>
-            </div>
-
-            <button class="accordion" onclick="toggleAccordion(5)">映像の編集だけを依頼することはできますか？</button>
-            <div class="panel">
-                <p>TV放送用からWeb用、またタブレット用とさまざまなメディアやデバイスに適した映像編集に対応しております。<br>
-                    撮影素材がなく完成したDVDしかお持ちでない場合でも対応可能です。</p>
-            </div>
-        </body>
         <div class="container4">
 			<p></p>
 		</div>
-        <body>
-            <div class="title">
-				<h2>お問い合わせフォーム</h2>
-                <br>
-                <p>データ入力、動画編集、イラスト・ロゴ作成に関する事なら株式会社アムールへご相談ください。<br>多数実績とノウハウで多彩なニーズにお応えします。どんなことでもお気軽にお問合せ下さい。</p>
-            </div>
-        </body>
     </center>
+
+    <body>
+        <div class="title03">
+            <h2>お問い合わせフォーム</h2>
+            <br>
+            <p>データ入力、動画編集、イラスト・ロゴ作成に関する事なら株式会社アムールへご相談ください。<br>多数実績とノウハウで多彩なニーズにお応えします。どんなことでもお気軽にお問合せ下さい。</p>
+        </div>
+    </body>
     <br>
     <br>
     <br>
 
     <title>お問い合わせフォーム</title>
     <style>
-        .title p {
+        .title03 {
+            text-align: center; /* テキストを中央揃えにする */
+        }
+
+        .title03 h2 {
+            font-size: 24px; /* タイトルの文字サイズ */
+        }
+
+        .title03 p {
             font-size: 16px; /* 説明文の文字サイズ */
             line-height: 1.5; /* 行の高さ（オプション） */
             margin-top: 10px; /* 上部の余白（オプション） */
@@ -494,39 +532,11 @@
         </center>
     </div>   
 
-    <title>Responsive Table</title>
-    <style type="text/css">
-        .kaisha {
-            width: 50%;
-        }
-
-        .kaisha td {
-			text-align: left;
-            border: 1px solid #ccc;
-            padding: 20px;
-        }
-
-        .kaisha th {
-			text-align: center;
-            font-weight: bold;
-            background-color: #271bcc; 
-			color: #fffefe;
-        }
-
-        .kaisha tr {
-            font-weight: bold;
-            background-color: #ffffff; 
-        }
-
-        .container5 p {
-            margin-bottom: 200px; /* デスクトップ用の間隔 */
-        }
-    </style>
     <div class="container5">
 		<p></p>
 	</div>
     <center>
-        <div class="section-title">
+        <div class="title04">
 			<h2>会社概要</h2>
         </div>
         <br>
@@ -578,5 +588,41 @@
             <p>&copy; 株式会社アムール</p>
         </footer>
     </center>
+    <title>Responsive Table</title>
+    <style type="text/css">
+        .title04 {
+            text-align: center; /* テキストを中央揃えにする */
+        }
+
+        .title04 h2 {
+            font-size: 24px; /* タイトルの文字サイズ */
+        }
+
+        .kaisha {
+            width: 50%;
+        }
+
+        .kaisha td {
+			text-align: left;
+            border: 1px solid #ccc;
+            padding: 20px;
+        }
+
+        .kaisha th {
+			text-align: center;
+            font-weight: bold;
+            background-color: #271bcc; 
+			color: #fffefe;
+        }
+
+        .kaisha tr {
+            font-weight: bold;
+            background-color: #ffffff; 
+        }
+
+        .container5 p {
+            margin-bottom: 200px; /* デスクトップ用の間隔 */
+        }
+    </style>
 </body>
 </html>
