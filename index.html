@@ -239,7 +239,6 @@
 </body>
 
 <body>
-<main>
     <center>
         <section id="gallery">
             <div>
@@ -462,20 +461,26 @@
         <div class="container4">
 			<p></p>
 		</div>
-        <section>
+        <body>
             <div class="title">
 				<h2>お問い合わせフォーム</h2>
                 <br>
                 <p>データ入力、動画編集、イラスト・ロゴ作成に関する事なら株式会社アムールへご相談ください。<br>多数実績とノウハウで多彩なニーズにお応えします。どんなことでもお気軽にお問合せ下さい。</p>
             </div>
-        </section>
-    </main>
+        </body>
+    </center>
     <br>
     <br>
     <br>
 
     <title>お問い合わせフォーム</title>
     <style>
+        .title p {
+            font-size: 16px; /* 説明文の文字サイズ */
+            line-height: 1.5; /* 行の高さ（オプション） */
+            margin-top: 10px; /* 上部の余白（オプション） */
+        }
+
         /* ボックス型のスタイル */
         .contact-form {
             background-color: #f2f2f2;
@@ -534,22 +539,14 @@
 
         /* スマートフォン用のスタイル */
         @media (max-width: 375px) {
-			#title p {
-                margin-bottom: 5px; /* スマホ表示時の文字サイズ */
-            }
+			.title p {
+                font-size: 5px; /* 説明文の文字サイズ */
+                line-height: 1.5; /* 行の高さ（オプション） */
+                margin-top: 10px; /* 上部の余白（オプション） */
+            } /* スマホ表示時の文字サイズ */
 			
 			.container4 p {
                 margin-bottom: 150px; /* スマートフォン用の間隔 */
-            }
-			
-			.contact-form {
-                padding: 4px;
-                font-size: 5px;
-            }
-
-            .contact-form input, .contact-form textarea, .contact-form input[type="submit"] {
-                font-size: 5px;
-                padding: 5px;
             }
         }
     </style>
