@@ -135,6 +135,13 @@
     <meta charset="UTF-8">
     <title>スライドショー</title>
     <style>
+        .slideshow-container {
+            max-width: 100%;
+            position: relative;
+            margin-top: 70px; /* Adjusted margin to prevent overlap */
+            text-align: center; /* Center the slideshow */
+        }
+
         .slideshow {
             max-width: 2000px;
             position: relative;
@@ -209,17 +216,18 @@
     <br>
     <br>
     <br>
-    <div class="slideshow">
-        <div class="slide active">
-            <img src="001.jpg" alt="スライド1">
+    <div class="slideshow-container">
+        <div class="slideshow">
+            <div class="slide active">
+                <img src="001.jpg" alt="スライド1">
+            </div>
+            <div class="slide">
+                <img src="002.jpg" alt="スライド2">
+            </div>
+            <div class="slide">
+                <img src="003.jpg" alt="スライド3">
+            </div>   
         </div>
-        <div class="slide">
-            <img src="002.jpg" alt="スライド2">
-        </div>
-        <div class="slide">
-            <img src="003.jpg" alt="スライド3">
-        </div>
-        
     </div>
     <script>
         var slideIndex = 0;
