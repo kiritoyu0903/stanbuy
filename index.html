@@ -89,6 +89,28 @@
     input[type="submit"]:hover {
         background-color: #005fa3;
     }
+
+    @media (max-width: 600px) {
+        header {
+            padding: 10px;
+        }
+
+        nav ul li {
+            margin-right: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="submit"] {
+            padding: 8px;
+            margin-right: 5px;
+            font-size: 14px;
+        }
+
+        input[type="submit"] {
+            padding: 8px 12px;
+        }
+    }
 </style>
 
 <script>
@@ -166,6 +188,18 @@
 
         .container0 p {
             margin-bottom: 1250px; /* デスクトップ用の間隔 */
+        }
+
+        @media (max-width: 600px) {
+            .prev,
+            .next {
+                font-size: 1.5em;
+                padding: 10px;
+            }
+
+            .container0 p {
+                margin-bottom: 600px; /* モバイル用の間隔 */
+            }
         }
     </style>
     <br>
@@ -263,36 +297,19 @@
                 margin-bottom: 300px; /* デスクトップ用の間隔 */
             }
 
-            /* スマホ表示用のスタイル */
-            @media (max-width: 375px) {
-                .title {
-                    text-align: center; /* テキストを中央揃えにする */
-                    padding-left: 10px; /* 左の余白 */
-                    padding-right: 10px; /* 右の余白 */
-                }
-
+            @media (max-width: 600px) {
                 .title h2 {
-                    font-size: 24px; /* タイトルの文字サイズ */
-                    margin-left: auto;
-                    margin-right: auto;
+                    font-size: 20px; /* モバイル用タイトルの文字サイズ */
                 }
 
                 .title p {
-                    font-size: 16px; /* 説明文の文字サイズ */
-                    line-height: 1.5; /* 行の高さ（オプション） */
-                    margin-top: 10px; /* 上部の余白（オプション） */
-                    margin-left: auto;
-                    margin-right: auto;
-                }
-
-                .container1 {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
+                    font-size: 14px; /* モバイル用説明文の文字サイズ */
                 }
 
                 .container1 img {
-                    margin-bottom: 300px; /* デスクトップ用の間隔 */
+                    width: 100%; /* モバイル用の画像幅 */
+                    height: auto;
+                    margin-bottom: 100px; /* モバイル用の間隔 */
                 }
             }
         </style>
@@ -329,6 +346,18 @@
 
             .container2 img {
                 margin-bottom: 300px; /* デスクトップ用の間隔 */
+            }
+
+            @media (max-width: 600px) {
+                .title01 h2 {
+                    font-size: 20px; /* モバイル用タイトルの文字サイズ */
+                }
+
+                .image-container img, .container2 img {
+                    width: 100%; /* モバイル用の画像幅 */
+                    height: auto;
+                    margin-bottom: 100px; /* モバイル用の間隔 */
+                }
             }
         </style>
         <div class="container3">
@@ -450,6 +479,25 @@
                 .container3 p {
                     margin-bottom: 1px; /* デスクトップ用の間隔 */
                 }
+
+                @media (max-width: 600px) {
+                    .title02 h2 {
+                        font-size: 20px; /* モバイル用タイトルの文字サイズ */
+                    }
+
+                    .accordion {
+                        width: 90%; /* モバイル用のアコーディオン幅 */
+                        font-size: 16px; /* モバイル用のフォントサイズ */
+                    }
+
+                    .panel {
+                        width: 90%; /* モバイル用のパネル幅 */
+                    }
+
+                    .panel p {
+                        font-size: 14px; /* モバイル用のフォントサイズ */
+                    }
+                }
             </style>
             <script>
                 // アコーディオンの開閉を制御
@@ -547,6 +595,44 @@
         
 		.container4 p {
             margin-bottom: 200px; /* デスクトップ用の間隔 */
+        }
+
+        @media (max-width: 600px) {
+            .title03 {
+                padding-left: 10px; /* モバイル用の左の余白 */
+                padding-right: 10px; /* モバイル用の右の余白 */
+            }
+
+            .title03 h2 {
+                font-size: 20px; /* モバイル用タイトルの文字サイズ */
+            }
+
+            .title03 p {
+                font-size: 14px; /* モバイル用説明文の文字サイズ */
+            }
+
+            .contact-form {
+                padding: 15px; /* モバイル用のパディング */
+                max-width: 100%; /* モバイル用の幅 */
+            }
+
+            .contact-form h2 {
+                font-size: 20px; /* モバイル用フォームタイトルの文字サイズ */
+            }
+
+            .contact-form label {
+                font-size: 14px; /* モバイル用ラベルの文字サイズ */
+            }
+
+            .contact-form input[type="text"],
+            .contact-form input[type="email"],
+            .contact-form textarea {
+                font-size: 14px; /* モバイル用入力とテキストエリアの文字サイズ */
+            }
+
+            .contact-form input[type="submit"] {
+                font-size: 14px; /* モバイル用送信ボタンの文字サイズ */
+            }
         }
     </style>
 
@@ -654,6 +740,21 @@
 
         .container5 p {
             margin-bottom: 200px; /* デスクトップ用の間隔 */
+        }
+
+        @media (max-width: 600px) {
+            .title04 h2 {
+                font-size: 20px; /* モバイル用タイトルの文字サイズ */
+            }
+
+            .kaisha {
+                width: 90%; /* モバイル用の幅 */
+            }
+
+            .kaisha th, .kaisha td {
+                padding: 10px; /* モバイル用のパディング */
+                font-size: 14px; /* モバイル用のフォントサイズ */
+            }
         }
     </style>
 </body>
