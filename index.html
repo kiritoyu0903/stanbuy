@@ -266,6 +266,22 @@
             .container1 img {
                 margin-bottom: 300px; /* デスクトップ用の間隔 */
             }
+
+             /* スマホ表示用のスタイル */
+            @media (max-width: 600px) {
+                .title {
+                    padding-left: 10px; /* 左の余白 */
+                    padding-right: 10px; /* 右の余白 */
+                }
+
+                .title h2 {
+                    font-size: 20px; /* タイトルの文字サイズを小さくする */
+                } 
+
+                .title p {
+                    font-size: 8px; /* 説明文の文字サイズを小さくする */
+                }
+            }
         </style>
         <div class="title01">
             <h2>料金プラン</h2>
