@@ -598,45 +598,71 @@
 
         @media (max-width: 600px) {
             .title03 {
-                padding-left: 10px; /* モバイル用の左の余白 */
-                padding-right: 10px; /* モバイル用の右の余白 */
+                text-align: center; /* Center the text */
+                padding: 0 10px; /* Adjust padding for mobile */
             }
 
             .title03 h2 {
-                font-size: 20px; /* モバイル用タイトルの文字サイズ */
+                font-size: 20px; /* Reduce title font size for mobile */
             }
 
             .title03 p {
-                font-size: 10px; /* モバイル用説明文の文字サイズ */
-                padding-left: 80px; /* モバイル用の左の余白 */
-                padding-right: 80px; /* モバイル用の右の余白 */
+                font-size: 12px; /* Adjust description font size for mobile */
+                margin: 0 auto 20px; /* Center and add margin for mobile */
+                max-width: 80%; /* Limit max width for better readability on mobile */
             }
 
             .contact-form {
-                padding: 15px; /* モバイル用のパディング */
-                max-width: 70%; /* モバイル用の幅 */
-                margin: 0 center; /* センター揃え */
-            }
+                background-color: #f2f2f2;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                padding: 20px;
+                max-width: 80%; /* Adjust max width for mobile */
+                margin: 0 auto; /* Center the form */
+            } 
 
             .contact-form h2 {
-                font-size: 20px; /* モバイル用フォームタイトルの文字サイズ */
+                font-size: 20px; /* Reduce form title font size for mobile */
+                margin-bottom: 20px; /* Adjust margin for mobile */
             }
 
             .contact-form label {
-                font-size: 14px; /* モバイル用ラベルの文字サイズ */
+                font-size: 14px; /* Reduce label font size for mobile */
+                display: block; /* Ensure labels are on new lines */
             }
 
             .contact-form input[type="text"],
             .contact-form input[type="email"],
             .contact-form textarea {
-                font-size: 8px; /* モバイル用入力とテキストエリアの文字サイズ */
-                text-align: center;
+                width: 100%;
+                padding: 10px;
+                font-size: 14px; /* Adjust input font size for mobile */
+                border-radius: 5px;
+                border: 1px solid #ccc;
+                margin-bottom: 20px;
+                box-sizing: border-box; /* Ensure padding and border don't increase element width */
+            }
+
+            .contact-form textarea {
+                height: 150px;
+                resize: none;
             }
 
             .contact-form input[type="submit"] {
-                font-size: 14px; /* モバイル用送信ボタンの文字サイズ */
+                background-color: #007bff;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                padding: 10px 20px;
+                font-size: 16px; /* Keep submit button font size consistent */
+                cursor: pointer;
+            } 
+
+            .contact-form input[type="submit"]:hover {
+                background-color: #0069d9;
             }
         }
+
     </style>
 
     <div class="contact-form">
