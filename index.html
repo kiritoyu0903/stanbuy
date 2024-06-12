@@ -265,16 +265,29 @@
              /* スマホ表示用のスタイル */
             @media (max-width: 600px) {
                 .title {
+                    text-align: center; /* テキストを中央揃えにする */
                     padding-left: 10px; /* 左の余白 */
                     padding-right: 10px; /* 右の余白 */
                 }
 
                 .title h2 {
-                    font-size: 20px; /* タイトルの文字サイズを小さくする */
+                    font-size: 24px; /* タイトルの文字サイズ */
                 }
 
                 .title p {
-                    font-size: 4px; /* 説明文の文字サイズを小さくする */
+                    font-size: 16px; /* 説明文の文字サイズ */
+                    line-height: 1.5; /* 行の高さ（オプション） */
+                    margin-top: 10px; /* 上部の余白（オプション） */
+                }
+
+                .container1 {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                .container1 img {
+                    margin-bottom: 300px; /* デスクトップ用の間隔 */
                 }
             }
         </style>
